@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/09781f2dd3.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+            
+            
+            
+            
+             }
+             body{
+                background: black;
+             }
+
+        
+        span{
+            color: goldenrod;
+        }
+        .span{
+            font-size: x-large;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .dd{
+            color: #fff;
+            width: 600px;
+            height: 100px;
+            font-size: xx-large;
+            margin-left: 50px;
+        }
+        .pp{
+            color: #fff;
+            width: 90%;
+            height: 80px;
+            font-size: x-large;
+            margin-left: 50px;
+        }
+
+        .social-menu ul {
+    position: absolute;
+    
+    right: 650px;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 500px;
+    
+    
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    /* color: #000000; */
+    color: #fff;
+
+    font-size: 25px;
+    line-height: 50px;
+    transition: .10s;
+}
+
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+     border-radius: 50%; 
+    border: none;
+    /* background-color: white; */
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    /* box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+     */
+}
+
+
+
+.social-menu ul li .fa:hover{
+    transform: translate(0, -10px);
+}
+    
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #25D366;
+}
+.social-menu ul li:nth-child(5) a:hover {
+    background-color:#0A66C2;
+}
+
+.icon1 img{
+           color: #fff;
+           width: 100px;
+           height: 100px;
+            float: left;
+            background: black;
+            margin-top: 55px;
+            font-size: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+    
+}
+
+.email{
+            color: #fff;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            background: black;
+            margin-top: 70px;
+            font-size: x-large;
+            margin-left: 100px;
+}
+
+
+.icon2  img{
+          color: #fff;
+           width: 100px;
+           height: 100px;
+            float: left;
+            background: black;
+            margin-top: 15px;
+            font-size: 50px;
+            margin-left: 100px;
+            margin-right: 100px;
+
+}
+
+.contactnum{
+            color: #fff;
+            width: 100px;
+            height: 40px;
+            display: flex;
+            background: black;
+            margin-top: 50px;
+            font-size: x-large;
+            margin-left: 300px;
+            
+}
+
+.mynum  a{
+    color: #fff;
+            width: 100px;
+            height: 45px;
+            display: flex;
+            background: black;
+            text-decoration: none;
+            margin-top: 7px;
+            font-size: x-large;
+            margin-left: 300px;
+            border: none;
+            color: goldenrod;
+            margin-bottom: 100px;
+            
+}
+
+.mynum a:hover{
+    color:red;
+}
+
+    .container{
+        float: left;
+        width: 400px;
+        height: 200px;
+    }
+
+
+    .container2{
+        width: 600px;
+        height: 400px;
+        float: right; 
+        background: black;
+        color: #fff;
+        margin-top: 150px;
+        /* margin-right: 10px; */
+        display: right;
+    }
+
+    input[type="text"] {
+  width: 155px;
+  height:50px;
+  display: inline;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 30px;
+  margin-right: 20px;
+  
+  background:#252525;
+  color: #fff;
+}
+
+input[type="text"]:hover{
+    border: 1px solid goldenrod;
+}
+
+input[type="email"] {
+  width: 155px;
+  height:50px;
+  display: inline;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 30px;
+  margin-right: 20px;
+  background: #252525;
+  border: none;
+  color: #fff;
+  
+}
+
+
+input[type="email"]:hover{
+    border: 1px solid goldenrod;
+}
+
+textarea[name="txt"]{
+    background:#252525;
+    border: none;
+    color: #fff;
+    border-radius: 40px;
+}
+
+textarea[name="txt"]:hover{
+    border: 1px solid goldenrod;
+}
+
+
+    
+
+/* .button:hover {
+  background-color: #4CAF50; /* Green */
+  /* color: white;   */
+
+
+  /* button{
+    width: 170px;
+  height:50px;
+  border-radius: 30px;
+  background: goldenrod;
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  }
+
+
+  button  a{
+    background: goldenrod;
+    text-decoration: none;
+  }
+
+  button a:hover{
+    background: red;
+
+
+  } */
+
+  
+
+
+
+   button{
+    background: goldenrod;
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+   } 
+
+
+    a:hover  button{
+    background: red;
+
+   }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="span"><span><h1><span style="color: #fff;">GET IN </span> TOUCH</span></h1></div>
+    <div class="container">
+    <br><br>
+    <div class="dd">
+        DON`T  BE  SHY !
+        
+        <br>
+    </div>
+    <br><br>
+    <div class="pp">
+        <p> Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of our visions.</p>
+    
+    </div>
+
+    <div class="icon1">
+        <img src="./images/goldenenvelope2.png" width="100px"  height="100px">
+
+        </div>
+
+        <div class="email">
+            MAIL ME<br>
+            chinwe.martins01@gmail.com
+            
+        </div>
+
+        <div class="icon2">
+            <img src="./images/phone.png" width="100px"  height="100px">
+    
+            </div>
+    
+            <div class="contactnum">
+                CALL ME
+                
+                </div>
+                <div class="mynum">
+                    <a href="https://wa.me/8176042780">+2348176042780</a>
+            </div>
+            
+            
+
+        
+        
+          
+
+
+    <div class="icon2">
+        
+    </div>
+
+    <div class="social-menu">
+            
+        <ul>
+          <li><a href="https://www.facebook.com/chinwe.martins.50"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/ChinweMartins1"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com/affiliate.marketinghub?igshid=MzNlNGNkZWQ4Mg=="><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://wa.me/8176042780"><i class="fa fa-whatsapp"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/chinwe-martins-51ab13202/"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container2">
+        <form action="">
+            
+                
+            <input type="text"
+            name="FULL NAME"
+            id="FULL NAME" 
+            placeholder="YOUR NAME"
+            maxlength="80px"
+            minlength="20px"
+            required="required"
+            >
+
+            
+            <input type="email"
+            placeholder="YOUR EMAIL"
+            maxlength="50"
+            required="required">
+            
+
+            
+            <input type="text"
+            placeholder="YOUR SUBJECT"
+            maxlength="60"
+            minlength="15"
+            required="required">
+        
+           
+
+           
+            <textarea name="txt"
+           id=""  cols="85"
+           rows="15"
+           placeholder="YOUR MESSAGE"
+           required="required"
+           maxlength="50"
+           size="200px"
+           >
+        </textarea>
+        
+        
+        <br><br>
+    
+        
+        <a href="https://wa.me/+2348176042780?text=Hi! you have reached Chinwe. How may I be of help?"><button>SEND MESSAGE</button></a>
+    
+        
+
+
+
+        </form>
+    </div>
+   
+
+</body>
+</html>
